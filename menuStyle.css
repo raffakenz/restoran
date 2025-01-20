@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Inter, sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url('image/background\ menu\ list.png');
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+hr {
+    color: black;
+    height: 3px;
+    border: none;
+    background-color: orange;
+}
+
+#list-semua {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.h2-makanan {
+    border-bottom: 4px solid orange;
+    transition: all;
+}
+
+.h2-makanan:hover {
+    transform: translateY(-5px);
+    transition: .2s ease;
+}
+
+.img-makanan, .img-minuman, .img-dessert {
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+.p-keterangan {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.keterangan {
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    border-bottom: 2px solid darkorange;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.pesan {
+    color: black;
+    text-decoration: none;
+    border: 3px solid orange;
+    background-color: orange;
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all
+}
+
+.pesan:hover {
+    color: orange;
+    background-color: transparent;
+    transition: .2s ease;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem
+}
+
+@media (max-width: 768px) {
+    /* Menyesuaikan lebar layar HP */
+
+    #header {
+        font-size: 1rem; /* Mengurangi ukuran font */
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    #list-semua {
+        flex-direction: column; /* Susun elemen secara vertikal */
+        justify-content: center;
+        align-items: center;
+        gap: 2rem; /* Memberi jarak antar bagian */
+    }
+
+    .keterangan {
+        flex-direction: column; /* Item gambar dan teks susun vertikal */
+        align-items: center;
+    }
+
+    .items {
+        flex-direction: column; /* Gambar dan keterangan vertikal */
+        align-items: center;
+        text-align: center; /* Teks rata tengah */
+        gap: 1rem; /* Jarak antar elemen */
+    }
+
+    .p-keterangan {
+        margin: 0; /* Menghapus margin tambahan */
+        font-size: 16px; /* Sesuaikan ukuran teks */
+    }
+
+    .img-makanan, .img-minuman, .img-dessert {
+        width: 80px; /* Kurangi ukuran gambar */
+        height: 80px;
+    }
+
+    #btn {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .pesan {
+        font-size: 16px;
+        padding: 0.8rem;
+        border-radius: 8px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
